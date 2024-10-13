@@ -18,8 +18,8 @@
 </div>
 
 [![Demo](https://img.shields.io/badge/Online-Demo-red)]()
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://lizhou-cs.github.io/mglmm.github.io)
-[![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2409.13407)
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
+[![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
 
 
 </div>
