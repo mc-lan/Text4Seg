@@ -177,7 +177,7 @@ mix665k dataset and our referring segmentation datasets.
 @article{lan2024text4seg,
   title={Text4Seg: Reimagining Image Segmentation as Text Generation},
   author={Lan, Mengcheng and Chen, Chaofeng and Zhou, Yue and Xu, Jiaxing and Ke, Yiping and Wang, Xinjiang and Feng, Litong and Zhang, Wayne},
-  journal={arXiv preprint arXiv:2409.13407},
+  journal={arXiv},
   year={2024}
 ```
 
