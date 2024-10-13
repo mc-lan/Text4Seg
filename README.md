@@ -67,7 +67,7 @@ Our approach provides an efficient, scalable solution for vision-centric tasks w
 ---
 
 ## 💬 Semantic Descriptors and Row-wise Run-Length Encoding
-Without compromising performance, R-RLE achieves a 74% reduction in semantic descriptors length and  speeds up inference by 3×on average
+Without compromising performance, R-RLE achieves a 74% reduction in semantic descriptors length and  speeds up inference by 3× on average
 <p align="center">
   <img src="images/text4seg/semantic descriptors.jpg" width=90% alt="semantic descriptors Overview">
 </p>
