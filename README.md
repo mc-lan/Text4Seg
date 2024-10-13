@@ -89,11 +89,11 @@ The left side of the figure illustrates the proposed visual instruction data for
 ### 📷 Referring Expression Segmentation (RES) (Single Target)
 
 <div align="center">
-  <img src="images/tables/table1.jpg" width=width=90% alt="Table_1">
+  <img src="images/tables/table1.jpg" width=90% alt="Table_1">
 </div>
 
 <div align="center">
-  <img src="images/qualitative_results/res.jpg" width=width=90%>
+  <img src="images/qualitative_results/res.jpg" width=90%>
   <div style="display: inline-block; color: #999; padding: 2px;">
       Performance on refCOCO series benchmark.
   </div>
@@ -138,7 +138,7 @@ TextSeg can be directly applied in object detection with a simple mask2box parad
 TextSeg is built upon LLaVA-1.5-7B and trained on the COCOStuff-171 dataset.
 
 <div align="center">
-  <img src="images/tables/table5.jpg" width=50% alt="Table_5">
+  <img src="images/tables/table5.jpg" width=40% alt="Table_5">
 </div>
 
 
