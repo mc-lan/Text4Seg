@@ -19,7 +19,7 @@
 
 [![Demo](https://img.shields.io/badge/Online-Demo-red)]()
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
-[![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2410.09855)
 
 
 </div>
@@ -89,11 +89,11 @@ The left side of the figure illustrates the proposed visual instruction data for
 ### 📷 Referring Expression Segmentation (RES) (Single Target)
 
 <div align="center">
-  <img src="images/tables/table1.jpg" width=90% alt="Table_1">
+  <img src="images/tables/table1.jpg" width=80% alt="Table_1">
 </div>
 
 <div align="center">
-  <img src="images/qualitative_results/res.jpg" width=90%>
+  <img src="images/qualitative_results/res.jpg" width=80%>
   <div style="display: inline-block; color: #999; padding: 2px;">
       Performance on refCOCO series benchmark.
   </div>
@@ -104,12 +104,12 @@ The left side of the figure illustrates the proposed visual instruction data for
 ### 📷 Generalized Referring Expression Segmentation (GRES) (Multiple and Empty Targets)
 
 <div align="center">
-  <img src="images/tables/table2.jpg" width=90% alt="Table_2">
+  <img src="images/tables/table2.jpg" width=80% alt="Table_2">
 </div>
 
 
 <div align="center">
-  <img src="images/qualitative_results/gres.jpg" width=90%>
+  <img src="images/qualitative_results/gres.jpg" width=80%>
   <div style="display: inline-block; color: #999; padding: 2px;">
       Performance on grefCOCO benchmark.
   </div>
@@ -121,12 +121,12 @@ The left side of the figure illustrates the proposed visual instruction data for
 TextSeg can be directly applied in object detection with a simple mask2box paradigm, which first generates a segmentation mask based on the input and then derives the bounding box from the mask.
 
 <div align="center">
-  <img src="images/tables/table3.jpg" width=90% alt="Table_3">
+  <img src="images/tables/table3.jpg" width=80% alt="Table_3">
 </div>
 
 
 <div align="center">
-  <img src="images/qualitative_results/rec.jpg" width=90% alt="REC">
+  <img src="images/qualitative_results/rec.jpg" width=80% alt="REC">
   <div style="display: inline-block; color: #999; padding: 2px;">
       Performance on refCOCO series benchmark.
   </div>
@@ -166,7 +166,7 @@ mix665k dataset and our referring segmentation datasets.
 </div>
 
 <div align="center">
-  <img src="images/qualitative_results/vqa.jpg" width=80% alt="vqa">
+  <img src="images/qualitative_results/vqa.jpg" width=70% alt="vqa">
   <div style="display: inline-block; color: #999; padding: 2px;">
     Performance comparison on Visual understanding.
   </div>
@@ -174,11 +174,15 @@ mix665k dataset and our referring segmentation datasets.
 
 ## 📜 Citation
 ```bibtex
-@article{lan2024text4seg,
-  title={Text4Seg: Reimagining Image Segmentation as Text Generation},
-  author={Lan, Mengcheng and Chen, Chaofeng and Zhou, Yue and Xu, Jiaxing and Ke, Yiping and Wang, Xinjiang and Feng, Litong and Zhang, Wayne},
-  journal={arXiv},
-  year={2024}
+@misc{lan2024text4seg,
+      title={Text4Seg: Reimagining Image Segmentation as Text Generation}, 
+      author={Mengcheng Lan and Chaofeng Chen and Yue Zhou and Jiaxing Xu and Yiping Ke and Xinjiang Wang and Litong Feng and Wayne Zhang},
+      year={2024},
+      eprint={2410.09855},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.09855}, 
+}
 ```
 
 ---
