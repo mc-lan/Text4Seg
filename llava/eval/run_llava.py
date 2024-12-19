@@ -284,7 +284,7 @@ def eval_model(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, default="")
-    parser.add_argument("--model-base", type=str, default='./pre_trained/vicuna-7b-v1.5/')
+    parser.add_argument("--model-base", type=str, default=None)
     parser.add_argument("--image-file", type=str, default='./images/horses.jpg')
     parser.add_argument("--sam_path", type=str, default='llava/model/segment_anything/sam_vit_h_4b8939.pth')
     parser.add_argument("--query", type=str, default='Please segment horses in this image.')
