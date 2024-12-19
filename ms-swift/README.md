@@ -84,10 +84,6 @@ Download the checkpoints from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g
 |       ├──llava-1_5_7b-hf
 |       └──llava-1_5_13b-hf
 ```
-### Quick Inference
-```
-python demo.py
-```
 
 ### Model evaluation
 Referring expression segmengtation and comprehension:
