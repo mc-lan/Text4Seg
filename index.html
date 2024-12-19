@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text4Seg: Reimagining Image Segmentation as Text Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .center {
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .badge {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: #87CEEB;
+        }
+        .yellow {
+            background-color: #FFD700;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        table th {
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Text4Seg: Reimagining Image Segmentation as Text Generation</h1>
+            <div>
+                <a href='https://mc-lan.github.io/' target='_blank'>Mengcheng Lan</a><sup>1</sup>&emsp;
+                <a href='https://chaofengc.github.io/' target='_blank'>Chaofeng Chen</a><sup>1</sup>&emsp;
+                <a href='https://zytx121.github.io/' target='_blank'>Yue Zhou</a><sup>1</sup>&emsp;
+                <a href='https://angusmonroe.cn/' target='_blank'>Jiaxing Xu</a><sup>2</sup>&emsp;
+                <a href='https://keyiping.wixsite.com/index' target='_blank'>Yiping Ke</a><sup>2</sup>&emsp;
+                <a href='https://scholar.google.com.hk/citations?user=q4lnWaoAAAAJ&hl=en&inst=8669986779262753491&oi=ao' target='_blank'>Xinjiang Wang</a><sup>3</sup>&emsp;
+                <a href='https://scholar.google.com.hk/citations?user=PnNAAasAAAAJ&hl=en' target='_blank'>Litong Feng</a><sup>3</sup>&emsp;
+                <a href='https://www.statfe.com/' target='_blank'>Wayne Zhang</a><sup>3</sup>&emsp;
+            </div>
+            <div>
+                <sup>1</sup>S-Lab, Nanyang Technological University&emsp;
+                <sup>2</sup>CCDS, Nanyang Technological University&emsp;
+                <sup>3</sup>SenseTime Research&emsp;
+            </div>
+            <div>
+                <a href="#" class="badge red">Online Demo</a>
+                <a href="#" class="badge blue">Project Website</a>
+                <a href="http://arxiv.org/abs/2410.09855" class="badge yellow">arXiv Paper</a>
+            </div>
+        </div>
+
+        <div class="center">
+            <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
+        </div>
+
+        <hr>
+
+        <h2>Abstract</h2>
+        <p>Multimodal Large Language Models (MLLMs) have shown exceptional capabilities in vision-language tasks; however, effectively integrating image segmentation into these models remains a significant challenge. In this paper, we introduce Text4Seg, a novel text-as-mask paradigm that casts image segmentation as a text generation problem, eliminating the need for additional decoders and significantly simplifying the segmentation process. Our key innovation is semantic descriptors, a new textual representation of segmentation masks where each image patch is mapped to its corresponding text label. This unified representation allows seamless integration into the auto-regressive training pipeline of MLLMs for easier optimization. We demonstrate that representing an image with $16\times16$ semantic descriptors yields competitive segmentation performance. To enhance efficiency, we introduce the Row-wise Run-Length Encoding (R-RLE), which compresses redundant text sequences, reducing the length of semantic descriptors by 74% and accelerating inference by $3\times$, without compromising performance. Extensive experiments across various vision tasks, such as referring expression segmentation and comprehension, show that Text4Seg achieves state-of-the-art performance on multiple datasets by fine-tuning different MLLM backbones. Our approach provides an efficient, scalable solution for vision-centric tasks within the MLLM framework.</p>
+
+        <div class="center">
+            <img src="assets/text4seg/teaser.jpg" width="90%">
+            <p style="color: #999;">Different paradigms of MLLMs based image segmentation: (a) embeddings-as-mask paradigm that relies on additional segmentation decoder and loss (e.g., LISA); (b) polygon coordinates for instance segmentation (e.g., VisionLLM); (c) our text-as-mask paradigm that relies on semantically consistent text sequences.</p>
+        </div>
+
+        <hr>
+
+        <h2>🏆 Contributions</h2>
+        <ul>
+            <li><strong>Semantic descriptors:</strong> We introduce semantic descriptors, a textual sequence representation of segmentation masks that seamlessly integrates with existing MLLMs for easier optimization. We demonstrate that $16\times16$ semantic descriptors are sufficient for achieving strong performance.</li>
+            <li><strong>R-RLE:</strong> We develop Row-wise Run-Length Encoding (R-RLE) to compress semantic descriptors, significantly reducing its length and inference costs without compromising performance.</li>
+            <li><strong>Text4Seg framework:</strong> We propose Text4Seg, a novel text-as-mask paradigm that redefines image segmentation as a text generation problem, fully leveraging the text generation capabilities of MLLMs.</li>
+        </ul>
+
+        <hr>
+
+        <h2>💬 Semantic Descriptors and Row-wise Run-Length Encoding</h2>
+        <p>Without compromising performance, R-RLE achieves a 74% reduction in semantic descriptors length and speeds up inference by 3× on average.</p>
+        <div class="center">
+            <img src="assets/text4seg/semantic descriptors.jpg" width="90%" alt="semantic descriptors Overview">
+        </div>
+
+        <hr>
+
+        <h2>🔍 Text4Seg Framework</h2>
+        <p>The left side of the figure illustrates the proposed visual instruction data format, and the right side illustrates the model architecture of Text4Seg. Text4Seg could be seamlessly built upon existing MLLMs without any modifications to the model architecture.</p>
+        <div class="center">
+            <img src="assets/text4seg/text4seg.jpg" width="90%" alt="Text4Seg Architectural Overview">
+        </div>
+
+        <hr>
+
+        <h2>🚀 Qualitative and Quantitative Results</h2>
+
+        <h3>📷 Referring Expression Segmentation (RES) (Single Target)</h3>
+        <div class="center">
+            <img src="assets/tables/table1.jpg" width="80%" alt="Table_1">
+            <img src="assets/qualitative_results/res.jpg" width="80%">
+            <p style="color: #999;">Performance on refCOCO series benchmark.</p>
+        </div>
+
+        <h3>📷 Generalized Referring Expression Segmentation (GRES) (Multiple and Empty Targets)</h3>
+        <div class="center">
+            <img src="assets/tables/table2.jpg" width="80%" alt="Table_2">
+            <img src="assets/qualitative_results/gres.jpg" width="80%">
+            <p style="color: #999;">Performance on grefCOCO benchmark.</p>
+        </div>
+
+        <h3>📷 Referring Expression Comprehension (REC)</h3>
+        <p>Text4Seg can be directly applied in object detection with a simple mask2box paradigm, which first generates a segmentation mask based on the input and then derives the bounding box from the mask.</p>
+        <div class="center">
+            <img src="assets/tables/table3.jpg" width="80%" alt="Table_3">
+            <img src="assets/qualitative_results/rec.jpg" width="80%" alt="REC">
+            <p style="color: #999;">Performance on refCOCO series benchmark.</p>
+        </div>
+
+        <h3>📷 Open-vocabulary Semantic Segmentation (OVSS)</h3>
+        <p>Text4Seg is built upon LLaVA-1.5-7B and trained on the COCOStuff-171 dataset.</p>
+        <div class="center">
+            <img src="assets/tables/table5.jpg" width="40%" alt="Table_5">
+            <img src="assets/qualitative_results/pas20.jpg" width="90%" alt="Results_GCG">
+            <p style="color: #999;">Performance on PASCAL VOC 20 benchmark.</p>
+            <img src="assets/qualitative_results/pc59.jpg" width="90%" alt="Results_GCG">
+            <p style="color: #999;">Performance on Pascal Context 59 benchmark.</p>
+        </div>
+
+        <h3>📷 Visual Question Answering (VQA)</h3>
+        <p>Our text-as-mask paradigm allows for seamless integration of downstream segmentation tasks into the pre-training of MLLMs. Text4Seg, built upon stage-2 of LLaVA-1.5-7B, is trained on both the LLaVA-v1.5-mix665k dataset and our referring segmentation datasets.</p>
+        <div class="center">
+            <img src="assets/tables/table4.jpg" width="100%" alt="Table_4">
+            <img src="assets/qualitative_results/vqa.jpg" width="70%" alt="vqa">
+            <p style="color: #999;">Performance comparison on visual understanding.</p>
+        </div>
+
+        <hr>
+
+        <h2>📜 Citation</h2>
+        <pre><code>@misc{lan2024text4seg,
+  title={Text4Seg: Reimagining Image Segmentation as Text Generation},
+  author={Mengcheng Lan and Chaofeng Chen and Yue Zhou and Jiaxing Xu and Yiping Ke and Xinjiang Wang and Litong Feng and Wayne Zhang},
+  year={2024},
+  eprint={2410.09855},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2410.09855},
+}
+        </code></pre>
+        <hr>
+    </div>
+</body>
+</html>
