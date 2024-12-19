@@ -1,0 +1,21 @@
+others
+aeroplane
+bicycle
+bird
+ship
+bottle
+bus
+car
+cat
+chair
+cow
+table
+dog
+horse
+motorbike
+person
+potted plant
+sheep
+sofa
+train
+TV

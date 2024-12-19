@@ -1,0 +1,171 @@
+person, man, individual, human
+bike, cycle, two-wheeler, vehicle
+car, automobile, vehicle, motor vehicle, transport
+motorcycle, motorbike, bike, two-wheeler, vehicle
+airplane, aircraft, plane, flying vehicle, transport
+bus, coach, public transport, vehicle, transport
+train, railway, locomotive, rail vehicle, transport
+truck, lorry, freight vehicle, motor vehicle, transport
+boat, vessel, watercraft, ship, transport
+traffic light, stoplight, traffic signal, signal light, traffic control device
+fire hydrant, hydrant, fire plug, water hydrant
+stop sign, traffic sign, road sign, traffic control sign, intersection sign
+parking meter, meter, parking payment device, street meter, parking control device
+bench, seat, park bench, outdoor seating, sitting place
+bird, avian, fowl, feathered creature, winged animal
+cat, feline, house cat, domestic cat, pet
+dog, canine, hound, pooch, pet
+horse, equine, steed, mare, stallion, animal
+sheep, ovine, lamb, livestock, animal
+cow, bovine, cattle, livestock, animal
+elephant, pachyderm, mammal, animal, large mammal
+bear, ursine, mammal, animal, large mammal
+zebra, equid, mammal, animal
+giraffe, mammal, animal, long-necked animal, large mammal
+backpack, rucksack, knapsack, pack, bag
+umbrella, parasol, rainshade, sunshade, brolly
+handbag, purse, bag, tote, clutch
+tie, necktie, cravat, neckwear, accessory
+suitcase, luggage, baggage, travel case, valise
+frisbee, disc, flying disc, toy, sports equipment
+skis, ski equipment, snow skis, winter sports gear, sporting goods
+snowboard, snow board, winter sports gear, sporting goods, snow equipment
+sports ball, ball, athletic ball, game ball, sporting equipment
+kite, flying toy, wind toy, aerial toy, recreational equipment
+baseball bat, bat, sports equipment, athletic gear, sporting goods
+baseball glove, glove, mitt, sports equipment, athletic gear
+skateboard, skate board, skating equipment, sports equipment
+surfboard, surf board, surfing equipment, water sports gear
+tennis racket, tennis racquet, racket, sports equipment, athletic gear
+bottle, container, vessel, flask, receptacle
+wine glass, glass, goblet, stemware, drinkware
+cup, mug, drinking vessel, tumbler, drinkware
+fork, utensil, eating utensil, cutlery, tableware
+knife, utensil, cutting tool, cutlery, tableware
+spoon, utensil, eating utensil, cutlery, tableware
+bowl, dish, container, serving dish, tableware
+banana, fruit, tropical fruit, food
+apple, fruit, pome, food
+sandwich, food, meal, snack, lunch item
+orange, fruit, citrus, food
+broccoli, vegetable, cruciferous vegetable, food
+carrot, vegetable, root vegetable, food
+hot dog, frankfurter, sausage, food, snack
+pizza, food, meal, Italian dish, fast food
+donut, pastry, dessert, food, sweet
+cake, dessert, pastry, baked good, food
+chair, seat, furniture, sitting furniture, armchair
+couch, sofa, furniture, seating, settee
+potted plant, plant, indoor plant, houseplant, greenery
+bed, mattress, furniture, sleeping furniture, bed frame
+dining table, table, furniture, kitchen table, dinner table
+toilet, restroom fixture, bathroom fixture, WC, commode
+TV, television, electronic device, screen, entertainment
+laptop, computer, portable computer, notebook, device
+mouse, computer mouse, pointing device, input device, peripheral
+remote, remote control, controller, device, electronic device
+keyboard, computer keyboard, typing device, input device, peripheral
+cellphone, mobile phone, smartphone, device, communication device
+microwave, microwave oven, kitchen appliance, oven, cooking appliance
+oven, cooking appliance, kitchen appliance, stove, cooker
+toaster, kitchen appliance, bread toaster, cooking appliance, device
+sink, basin, plumbing fixture
+refrigerator, fridge, kitchen appliance, cooling appliance, device
+book, literature, reading material, publication
+clock, timepiece, wall clock, analog clock, timekeeping device
+vase, container, floral container, flower vase, decorative item
+scissors, cutting tool, shears, cutting implement, tool
+teddy bear, plush toy, stuffed animal, soft toy, cuddly toy
+hair dryer, blow dryer, grooming tool, hair styling tool, appliance
+toothbrush, dental hygiene tool, grooming tool, brush
+banner, flag, pennant, signage
+blanket, throw, bedspread, covering, bedding
+branch, branch
+bridge, structure, crossing, overpass
+building, structure, edifice, construction, architecture
+bush, shrub, vegetation, plant, flora
+cabinet, cupboard, storage unit, furniture, fixture
+cage, enclosure, container, structure
+cardboard, cardboard box, packaging material, paperboard
+carpet, rug, floor covering, textile, flooring
+ceiling, upper surface, architectural element, room part
+ceiling tile, tile, suspended ceiling tile, acoustical tile, panel
+cloth, fabric, textile, material, clothing
+clothes, clothing, apparel, garments, attire
+clouds, cloud, sky
+counter, countertop, surface, tabletop, kitchen counter
+cupboard, cabinet, storage unit, furniture, pantry
+curtain, drapery, window covering, fabric, window treatment
+desk stuff, items, supplies
+dirt, soil, earth, ground, sediment
+door stuff, door, entryway, portal, doorway
+fence, barrier, boundary, enclosure, railing
+floor marble, marble floor, flooring, marble
+floor, flooring, surface, ground
+floor stone, stone floor, flooring, stone, surface
+floor tile, tile floor, flooring, tile, ceramic
+floor wood, wood floor, flooring, wood, surface
+flower, blossom, bloom, plant, floral
+fog, mist, haze
+food, cuisine, meal
+fruit, produce, edible fruit, food
+furniture, furnishings, household items, home decor
+grass, lawn, turf, greenery, vegetation
+gravel, pebbles, rocks, stone
+ground, earth, surface, terrain
+hill, mound, mountain, slope
+house, home, dwelling, residence, building
+leaves, foliage, leaf, greenery
+light, illumination, lighting, brightness
+mat, rug, floor mat, floor covering, carpet
+metal, metallic, material, alloy, iron
+mirror stuff, mirror, reflective surface, glass, reflective material
+moss, plant, greenery, vegetation
+mountain, peak, summit
+mud, muck, dirt, soil, wet earth
+napkin, tissue, paper towel, cloth, table linen
+net, mesh, web, network, fabric
+paper, document, sheet, stationery, writing material
+pavement, sidewalk, footpath, walkway, pathway
+pillow, cushion, headrest, bedding, sleeping aid
+plant, vegetation, flora, greenery
+plastic, polymer, material, synthetic, resin
+platform, stage, raised area, structure, podium
+playing field, field, sports field, sports ground, pitch
+railing, rail, barrier, guardrail, fence
+railroad, railway, track, train track, railway line
+river, stream, waterway, watercourse, flowing water
+road, street, thoroughfare, roadway
+rock, stone, boulder, mineral
+roof, rooftop, top, covering, building top
+rug, carpet, floor covering, mat, textile
+salad, green salad, vegetable salad, mixed greens, dish
+sand, beach sand, granules, shore
+sea, ocean, water, marine
+shelf, shelving, storage, bookshelf, rack
+sky, heavens, atmosphere
+skyscraper, high-rise, tall building, tower, skyscraper building
+snow, snow
+solid, material, substance
+stairs, staircase, steps, stairway
+stone, rock, mineral, pebble, hard material
+straw, drinking straw
+structural, framework, support, construction
+table, dining table, furniture, tabletop
+tent, camping tent, shelter, outdoor shelter, temporary structure
+textile, fabric, material, cloth
+towel, bath towel, cloth, absorbent material, drying cloth
+tree, plant, woody plant, foliage
+vegetable, green vegetable, plant
+wall brick, brick wall, masonry, building material, construction
+wall concrete, concrete wall, cement, building material, construction
+wall, partition, divider, barrier
+wall panel, paneling, decorative panel, interior panel, surface
+wall stone, stone wall, masonry, building material, construction
+wall tile, tile wall, ceramic tile
+wall wood, wood wall, wooden paneling, building material, construction
+water, liquid, aquatic, fluid
+water drops, drops, droplets
+window blind, blind, window covering, shade, window treatment
+window, opening, aperture
+wood, timber, lumber, wooden material, building material

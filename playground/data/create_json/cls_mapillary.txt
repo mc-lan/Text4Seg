@@ -1,0 +1,124 @@
+bird
+ground animal
+ambiguous barrier
+concrete block
+curb
+fence
+guard rail
+barrier
+road median
+road side
+lane separator
+temporary barrier
+wall
+bike lane
+crosswalk - plain
+curb cut
+driveway
+parking
+parking aisle
+pedestrian area
+rail track
+road
+road shoulder
+service lane
+sidewalk
+traffic island
+bridge
+building
+garage
+tunnel
+person
+person group
+bicyclist
+motorcyclist
+other rider
+lane marking - dashed line
+lane marking - straight line
+lane marking - zigzag line
+lane marking - ambiguous
+lane marking - arrow (left)
+lane marking - arrow (other)
+lane marking - arrow (right)
+lane marking - arrow (split left or straight)
+lane marking - arrow (split right or straight)
+lane marking - arrow (straight)
+lane marking - crosswalk
+lane marking - give way (row)
+lane marking - give way (single)
+lane marking - hatched (chevron)
+lane marking - hatched (diagonal)
+lane marking - other
+lane marking - stop line
+lane marking - symbol (bicycle)
+lane marking - symbol (other)
+lane marking - text
+lane marking (only) - dashed line
+lane marking (only) - crosswalk
+lane marking (only) - other
+lane marking (only) - test
+mountain
+sand
+sky
+snow
+terrain
+vegetation
+water
+banner
+bench
+bike rack
+catch basin
+cctv camera
+fire hydrant
+junction box
+mailbox
+manhole
+parking meter
+phone booth
+pothole
+signage - advertisement
+signage - ambiguous
+signage - back
+signage - information
+signage - other
+signage - store
+street light
+pole
+pole group
+traffic sign frame
+utility pole
+traffic cone
+traffic light - general (single)
+traffic light - pedestrians
+traffic light - general (upright)
+traffic light - general (horizontal)
+traffic light - cyclists
+traffic light - other
+traffic sign - ambiguous
+traffic sign (back)
+traffic sign - direction (back)
+traffic sign - direction (front)
+traffic sign (front)
+traffic sign - parking
+traffic sign - temporary (back)
+traffic sign - temporary (front)
+trash can
+bicycle
+boat
+bus
+car
+caravan
+motorcycle
+on rails
+other vehicle
+trailer
+truck
+vehicle group
+wheeled slow
+water valve
+car mount
+dynamic
+ego vehicle
+ground
+static
+others

@@ -1,0 +1,151 @@
+others
+wall, building, structure
+building, structure
+sky, atmosphere
+floor, ground
+tree, plant, organism, living thing
+ceiling, roof, top
+road, street, pathway, route
+bed, furniture
+windowpane, window, aperture, portal
+grass, plant, vegetation, flora, greenery
+cabinet, furniture
+sidewalk, pavement, path, walkway, footpath
+person, individual, human, being
+earth, planet, world, sphere
+door, entrance, portal, gateway
+table, furniture
+mountain, hill, peak, summit
+plant, vegetation, flora, greenery
+curtain, drapery, fabric, textile
+chair, furniture
+car, vehicle, automobile
+water, liquid
+painting, artwork, image, picture
+sofa, couch, furniture
+shelf, furniture
+house, building, dwelling, home
+sea, ocean, water, marine
+mirror, reflective surface, glass
+rug, carpet, floor covering, textile, fabric
+field, meadow, pasture, grassland
+armchair, chair, furniture
+seat, chair, furniture
+fence, barrier, boundary, enclosure
+desk, table, furniture
+rock, stone, mineral, solid
+wardrobe, closet, furniture
+lamp, light, lighting fixture, illuminator, electric object
+bathtub, tub, bathroom fixture, container, vessel
+railing, barrier, guardrail, fence
+cushion, pillow, soft object, pad
+base, foundation
+box, container, receptacle, storage
+column, pillar, support, post
+signboard, sign, board, display, indicator
+chestofdrawers, dresser, furniture
+counter, surface, table, furniture
+sand, granules, grains, beach
+sink, basin, fixture, plumbing, container
+skyscraper, building, structure, tower, high-rise
+fireplace, hearth, chimney
+refrigerator, fridge, appliance, cooler, device
+grandstand, stands, seating, structure, platform
+path, trail, track, route, way
+stairs, staircase, steps
+runway, path, track
+case, container, box, receptacle, enclosure
+pool table, billiard table, game
+pillow, cushion, pad
+screen door, door
+stairway, staircase, steps
+river, stream, watercourse, waterway
+bridge, crossing, span
+bookcase, shelf, furniture
+blind, window covering, shade, screen, covering
+coffee table, table, furniture
+toilet, restroom, bathroom
+flower, plant, blossom, bloom, flora
+book, publication, literature
+hill, mound, rise, summit
+bench, seat, furniture
+countertop, surface, table, furniture
+stove, appliance, cooker, range, burner
+palm, tree, plant, vegetation, flora
+kitchen island, counter, table
+computer, device, machine
+swivel chair, chair, furniture, seat
+boat, vessel, watercraft, ship, craft
+bar, establishment, pub, tavern, lounge
+arcade machine, game, arcade, device, machine
+hovel, hut, shack, dwelling, shelter
+bus, vehicle, transportation, coach
+towel, cloth, fabric, textile
+light, illumination, lamp, brightness
+truck, vehicle, transportation, lorry, conveyance
+tower, structure, building, high-rise
+chandelier, light fixture, lighting, lamp, fixture
+awning, canopy, shade, cover, shelter
+streetlight, lamp post, light, illumination
+booth, stall, kiosk
+television receiver, TV, screen
+airplane, aircraft, plane, flying machine, vehicle
+dirt track, path, trail, course, route
+apparel, clothing, garments, attire
+pole, post, column
+land, terrain, ground, earth, territory
+bannister， bannister
+escalator, moving staircase, stairs, steps
+ottoman, footstool, furniture
+bottle, container, vessel, receptacle
+buffet, sideboard, furniture
+poster, placard, advertisement, sign
+stage, platform, podium, dais
+van, vehicle, transportation, conveyance, automobile
+ship, vessel, boat, watercraft, craft
+fountain, fountain
+conveyer belt, conveyor, belt, transport
+canopy, awning, cover, shelter, shade
+washer, machine, appliance, device, equipment
+plaything, toy, item
+swimming pool, pool, water
+stool, seat, furniture, chair
+barrel, container, drum, cask, vessel
+basket, container, vessel, receptacle, holder
+waterfall, cascade, falls, cataract
+tent, shelter, canopy, structure, camping
+bag, container, receptacle
+minibike, motorcycle, bike, vehicle, transport
+cradle, bed, cot, crib
+oven, appliance, stove, cooker
+ball, sphere, round, plaything
+food, nourishment, sustenance, meal, cuisine
+step, stair, stage, level
+tank, container, vessel, reservoir, storage
+tradename, brand, label, trademark, name
+microwave, appliance, oven, device, machine
+pot, container, vessel, cooking utensil
+animal, creature, organism, living being, wildlife
+bicycle, bike, cycle, two-wheeler, transport
+lake, pond, water, reservoir, lagoon
+dishwasher, appliance, machine, washer
+screen, monitor, display, panel, surface
+blanket, cover, quilt, throw, bedding
+sculpture, statue, artwork, art
+hood, cover, cap, bonnet, canopy
+sconce, fixture, light, lamp
+vase, container, vessel, jar
+traffic light, signal, semaphore, light
+tray, container, dish, plate
+ashcan, trash can, bin, garbage container, waste receptacle
+fan, ventilator, appliance, device, blower
+pier, dock, wharf, jetty, platform
+crtscreen, monitor, display, screen
+plate, dish, vessel, container, dinnerware
+monitor, screen, display, panel, screen
+bulletin board, noticeboard, board
+shower, bathroom fixture, bath
+radiator, heater, appliance, device, heating
+glass, material, substance, pane
+clock, timepiece, time
+flag, banner, ensign, pennant

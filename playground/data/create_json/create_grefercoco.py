@@ -1,0 +1,111 @@
+import os
+import numpy as np
+from PIL import Image
+import random
+from pycocotools import mask
+from pycocotools.coco import COCO
+from refer import REFER
+from grefer import G_REFER
+import matplotlib.pyplot as plt
+from question_answer_list import QUESTION_ALL, QUESTION_PARTIAL, QUESTION_CONDITION, ANSWER_ALL, ANSWER_PARTIAL, \
+    ANSWER_CONDITION
+from utils import encode_mask
+
+
+h_new = w_new = 24
+data_path = "./playground/data/refer_seg"
+ds = "grefcoco"
+splitBy = "unc"
+refer_api = G_REFER(data_path, ds, splitBy)
+
+ref_ids_train = refer_api.getRefIds(split="train")
+images_ids_train = refer_api.getImgIds(ref_ids=ref_ids_train)  
+loaded_images = refer_api.loadImgs(image_ids=images_ids_train)
+
+Content = []
+j = 0
+num_FAILD = 0
+
+for _ in range(1):
+    for num, image_info in zip(range(len(loaded_images)), loaded_images):
+        refs = refer_api.imgToRefs[image_info["id"]]
+        for kk in range(len(refs)):
+            item = {}
+            item["id"] = image_info["id"]
+
+            if ds == "refclef":
+                item["image"] = os.path.join("refer_seg/images/saiapr_tc-12", image_info["file_name"])
+            else:
+                item["image"] = os.path.join("refer_seg/images/coco_2014/train2014", image_info["file_name"])
+
+            # conversations
+            conversation_list = []
+
+            for round in range(2):
+                # randon choose one ref
+                if round == 0:
+                    ref = refs[kk]
+                else:
+                    ref = random.choice(refs)
+                sentences = ref['sentences']
+                anns = refer_api.refToAnn[ref['ref_id']]
+
+                if None in anns or "segmentation" not in anns[0]:
+                    m = np.zeros((image_info["height"], image_info["width"])).astype(np.uint8)
+                else:
+                    m = np.zeros((image_info["height"], image_info["width"])).astype(np.uint8)
+                    for ann in anns:
+                        if type(ann["segmentation"]) == list and type(ann["segmentation"][0]) == list:  # polygon
+                            rle = mask.frPyObjects(
+                                ann["segmentation"],
+                                image_info["height"],
+                                image_info["width"],
+                            )
+                        else:
+                            num_FAILD += 1
+                            pass
+                            # rle = ann["segmentation"]
+                            # for i in range(len(rle["counts"])):
+                            #     if not isinstance(rle["counts"][i], bytes):
+                            #         rle["counts"][i] = rle[i]["counts"][i].encode()
+                        m = m + np.sum(mask.decode(rle), axis=2)
+                    m[m > 1] = 1
+                annotation = Image.fromarray(m.astype(np.uint8))
+
+                item['height'] = h_new
+                item['width'] = w_new
+
+                annotation = annotation.resize((w_new, h_new), Image.NEAREST) 
+                array_annotation = np.array(annotation).flatten() 
+
+                # select one quesetion from questions_all or questions_partial
+                sentence = random.choice(sentences)
+                question = random.choice(QUESTION_PARTIAL).replace("[class_name]", sentence['sent'])
+
+                if round == 0:
+                    conversation_list.append({"from": "human", "value": f"<image>\n{question}"})
+                else:
+                    conversation_list.append({"from": "human", "value": f"{question}"})
+
+                label_each_pixel = [sentence['sent'] if label > 0 else "others" for label in array_annotation]
+
+                ####  index  ####
+                label_each_pixel = np.reshape(label_each_pixel, (h_new, w_new))
+                SEG = encode_mask(label_each_pixel)
+                ####  index  ####
+
+                answer = random.choice(ANSWER_PARTIAL).replace("[class_name]", sentence['sent']) + f"\n<seg>{SEG}</seg>"
+
+                conversation_list.append({"from": "gpt", "value": answer})
+
+            item["conversations"] = conversation_list
+
+            Content.append(item)
+            j += 1
+            print(j)
+
+print(num_FAILD)
+
+import json
+with open("./playground/data/json_files/" + ds +"_24_two_round_1.json", "w") as f:
+    json.dump(Content, f, indent=4)
