@@ -72,7 +72,7 @@ pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
 
-**For the project based on ms-swift (Tables 1, 2, 3)**, please check out [Text4Seg/ms-swift](https://github.com/mc-lan/Text4Seg).
+**For the project based on ms-swift (Tables 1, 2, 3)**, please check out [Text4Seg/ms-swift](https://github.com/mc-lan/Text4Seg/tree/main/ms-swift).
 
 ## Datasets
 - [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json)
