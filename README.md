@@ -18,7 +18,7 @@
 </div>
 
 [![Demo](https://img.shields.io/badge/Online-Demo-red)]()
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mc-lan.github.io/Text4Seg/)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2410.09855)
 
 
