@@ -160,7 +160,7 @@ Download the [sam-h](https://github.com/facebookresearch/segment-anything#model-
 ## Quick Inference
 Please note that this checkpoint was trained on a combination of the LLaVA v1.5 mix665k dataset, the RefCOCO series, the GrefCOCO dataset, and the COCOStuff dataset for demonstration purposes.
 ```
-python llava/eval/run_llava.py --model-path="lmc22/text4seg-7b-p24" --image-file="images/horses.jpg" --query="Please segment the white horse in this image."
+python llava/eval/run_llava.py --model-path="lmc22/text4seg-llava-7b-p24" --image-file="images/horses.jpg" --query="Please segment the white horse in this image."
 ```
 
 ## Model evaluation
