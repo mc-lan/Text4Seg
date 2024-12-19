@@ -62,7 +62,7 @@ For SAM, please download the checkpoints from [SAM](https://github.com/facebookr
 ```
 
 ## Checkpoints
-Download the checkpoints from [OneDrive](https://drive.google.com/drive/folders/1DueMGFkN6p1RvCxym5BpxsOdm2q3tSCl?usp=drive_link) | [BaiduPan](https://pan.baidu.com/s/1rK8L7uHmaE5Vun4yLnnL5g?pwd=2pqh) to `checkpoints` folder.
+Download the checkpoints from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/lanm0002_e_ntu_edu_sg/Eu9JQC2QDuZFj3wpNksYYfQBRnEcX10VQOWdZ3bKFr7Qkg?e=WG5vVO) to `checkpoints` folder.
 ```
 ├── checkpoints
 │   ├── deepseek-vl-1.3b-chat
