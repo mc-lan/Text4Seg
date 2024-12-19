@@ -18,7 +18,11 @@
 </div>
 
 [![Demo](https://img.shields.io/badge/Online-Demo-red)]()
+<<<<<<< HEAD
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mc-lan.github.io/Text4Seg/)
+=======
+[![Website](https://img.shields.io/badge/Project-Website-87CEEB)]()
+>>>>>>> fdd1188 (initial commit)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2410.09855)
 
 
@@ -64,15 +68,24 @@ git clone https://github.com/mc-lan/Text4Seg.git
 cd Text4Seg
 
 # create new anaconda env
+<<<<<<< HEAD
 conda create -n text4seg python=3.10
 conda activate text4seg
+=======
+conda create -n Text4Seg python=3.10
+conda activate Text4Seg
+>>>>>>> fdd1188 (initial commit)
 
 # install torch and dependencies
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
 
+<<<<<<< HEAD
 **For the project based on ms-swift (Tables 1, 2, 3)**, please check out [Text4Seg/ms-swift](https://github.com/mc-lan/Text4Seg/tree/main/ms-swift).
+=======
+**For the project based on ms-swift (Tables 1, 2, 3)**, please check out [Text4Seg/ms-swift](https://github.com/mc-lan/Text4Seg).
+>>>>>>> fdd1188 (initial commit)
 
 ## Datasets
 - [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json)
@@ -155,12 +168,21 @@ python playground/data/create_json/create_cocostuff.py
 ## Pre-trained weights
 Download the [clip-vit-large](https://huggingface.co/openai/clip-vit-large-patch14-336) and [vicuna-7b-v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) weights from the Hugging Face to `pre_trained` folder.
 Download the [mm_project.bin](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5) to `checkpoints/llava-v1.5-7b-pretrain` folder.
+<<<<<<< HEAD
 Download the [sam-h](https://github.com/facebookresearch/segment-anything#model-checkpoints) to `llava/model/segment_anything` folder.
 
 ## Quick Inference
 Please note that this checkpoint was trained on a combination of the LLaVA v1.5 mix665k dataset, the RefCOCO series, the GrefCOCO dataset, and the COCOStuff dataset for demonstration purposes.
 ```
 python llava/eval/run_llava.py --model-path="lmc22/text4seg-llava-7b-p24" --image-file="images/horses.jpg" --query="Please segment the white horse in this image."
+=======
+## Checkpoints
+Download the our checkpoints (Tables 4 and 5) from [OneDrive](https://drive.google.com/drive/folders/1DueMGFkN6p1RvCxym5BpxsOdm2q3tSCl?usp=drive_link) to `checkpoints` folder.
+
+## Quick Inference
+```
+python llava/eval/run_llava.py
+>>>>>>> fdd1188 (initial commit)
 ```
 
 ## Model evaluation
@@ -176,7 +198,11 @@ bash scripts/v1_5/eval/semantic_seg.sh
 
 ## Model training
 ```
+<<<<<<< HEAD
 bash scripts/v1_5/fintune_lora.sh
+=======
+bash scripts/v1_5/eval/refer_seg.sh
+>>>>>>> fdd1188 (initial commit)
 ```
 
 
