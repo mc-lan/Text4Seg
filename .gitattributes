@@ -3,6 +3,9 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 # https://git-scm.com/docs/gitattributes#_end_of_line_conversion
 * text=auto
+*.p linguist-detectable=false
+*.cls linguist-detectable=false
+*.i linguist-detectable=false
 
 # common python attributes, taken from https://github.com/alexkaratarakis/gitattributes/blob/710900479a2bedeec7003d381719521ffbb18bf8/Python.gitattributes
 # Source files
