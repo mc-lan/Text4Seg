@@ -176,7 +176,7 @@ bash scripts/v1_5/eval/semantic_seg.sh
 
 ## Model training
 ```
-bash scripts/v1_5/eval/refer_seg.sh
+bash scripts/v1_5/fintune_lora.sh
 ```
 
 
