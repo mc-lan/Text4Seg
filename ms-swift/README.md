@@ -35,7 +35,7 @@ Follow [ms-swift](https://github.com/modelscope/ms-swift?tab=readme-ov-file#%EF%
 cd ms-swift
 conda create -n swift python=3.10
 conda activate swift
-pip install 'ms-swift[all]' -U
+pip install -e .
 ```
 
 ## Datasets
