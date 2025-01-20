@@ -64,8 +64,8 @@ git clone https://github.com/mc-lan/Text4Seg.git
 cd Text4Seg
 
 # create new anaconda env
-conda create -n Text4Seg python=3.10
-conda activate Text4Seg
+conda create -n text4seg python=3.10
+conda activate text4seg
 
 # install torch and dependencies
 pip install -e ".[train]"
@@ -176,7 +176,7 @@ bash scripts/v1_5/eval/semantic_seg.sh
 
 ## Model training
 ```
-bash scripts/v1_5/eval/refer_seg.sh
+bash scripts/v1_5/fintune_lora.sh
 ```
 
 
