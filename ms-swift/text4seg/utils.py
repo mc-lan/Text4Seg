@@ -1,4 +1,4 @@
-from my_scripts.segment_anything.utils.transforms import ResizeLongestSide
+from .segment_anything.utils.transforms import ResizeLongestSide
 import numpy as np
 import torch
 from enum import Enum
@@ -7,6 +7,7 @@ from torchvision.ops.boxes import box_area
 import re
 import pydensecrf.densecrf as dcrf
 from pydensecrf.utils import unary_from_labels
+
 
 def translate_sequence(sequence_str):
     """
@@ -41,6 +42,7 @@ def translate_sequence(sequence_str):
 
     return translated_sequence
 
+
 def decode_mask(encoded_str):
     rows = encoded_str.strip("\n").split("\n ")
     decoded_list = []
@@ -51,6 +53,7 @@ def decode_mask(encoded_str):
             decoded_list.extend([label] * int(count))
     return "|".join(decoded_list)
 
+
 def decode_mask_s(encoded_str):
     rows = encoded_str.strip("\n")
     decoded_list = []
@@ -60,13 +63,14 @@ def decode_mask_s(encoded_str):
         decoded_list.extend([label] * int(count))
     return "|".join(decoded_list)
 
+
 def decode_mask_l(encoded_str):
     rows = encoded_str.strip("\n")
     tokens = rows.split("| ")
     return "|".join(tokens)
 
-def compute_logits_from_mask(mask, eps=1e-3):
 
+def compute_logits_from_mask(mask, eps=1e-3):
     def inv_sigmoid(x):
         return np.log(x / (1 - x))
 
@@ -102,6 +106,7 @@ def compute_logits_from_mask(mask, eps=1e-3):
     logits = logits[None]
     assert logits.shape == (1, 256, 256), f"{logits.shape}"
     return logits
+
 
 def masks_sample_points(masks):
     """Sample points on mask
@@ -188,6 +193,7 @@ def masks_to_boxes(masks):
 
     return torch.stack([x_min, y_min, x_max, y_max], 1)
 
+
 def box_iou(boxes1, boxes2):
     area1 = box_area(boxes1)
     area2 = box_area(boxes2)
@@ -202,6 +208,7 @@ def box_iou(boxes1, boxes2):
 
     iou = inter / union
     return iou, union
+
 
 def show_points(coords, labels, ax, marker_size=375):
     pos_points = coords[labels == 1]
@@ -301,7 +308,7 @@ def intersectionAndUnionGPU(output, target, K, ignore_index=255):
 def crf_refine(image, labels, n_labels=2, gt_prob=0.9):
     """
     Refine a coarse mask using DenseCRF.
-    
+
     :param image: Input image (HxWx3)
     :param labels: Coarse mask (HxW) where 0=background, 1=first class, 2=second class, ...
     :return: Refined mask
