@@ -17,11 +17,8 @@
     <sup>3</sup>SenseTime Research&emsp;
 </div>
 
-<<<<<<< HEAD
 [![Demo](https://img.shields.io/badge/Online-Demo-red)]()
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mc-lan.github.io/Text4Seg/)
-=======
->>>>>>> fdd1188 (initial commit)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2410.09855)
 
 </div>
@@ -38,11 +35,8 @@ Follow [ms-swift](https://github.com/modelscope/ms-swift?tab=readme-ov-file#%EF%
 cd ms-swift
 conda create -n swift python=3.10
 conda activate swift
-<<<<<<< HEAD
 pip install -e .
-=======
 pip install 'ms-swift[all]' -U
->>>>>>> fdd1188 (initial commit)
 ```
 
 ## Datasets
@@ -69,11 +63,8 @@ For SAM, please download the checkpoints from [SAM](https://github.com/facebookr
 ```
 
 ## Checkpoints
-<<<<<<< HEAD
+
 Download the checkpoints (lora weight) from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/lanm0002_e_ntu_edu_sg/Eu9JQC2QDuZFj3wpNksYYfQBRnEcX10VQOWdZ3bKFr7Qkg?e=WG5vVO) to `checkpoints` folder.
-=======
-Download the checkpoints from [OneDrive](https://drive.google.com/drive/folders/1DueMGFkN6p1RvCxym5BpxsOdm2q3tSCl?usp=drive_link) | [BaiduPan](https://pan.baidu.com/s/1rK8L7uHmaE5Vun4yLnnL5g?pwd=2pqh) to `checkpoints` folder.
->>>>>>> fdd1188 (initial commit)
 ```
 ├── checkpoints
 │   ├── deepseek-vl-1.3b-chat
@@ -95,13 +86,11 @@ Download the checkpoints from [OneDrive](https://drive.google.com/drive/folders/
 |       ├──llava-1_5_7b-hf
 |       └──llava-1_5_13b-hf
 ```
-<<<<<<< HEAD
-=======
+
 ### Quick Inference
 ```
 python demo.py
 ```
->>>>>>> fdd1188 (initial commit)
 
 ### Model evaluation
 Referring expression segmengtation and comprehension:
@@ -131,8 +120,5 @@ bash text4seg/internvl2-8B/train.sh
 Step 3: SFT on grefercoco datasets
 ```
 bash text4seg/internvl2-8B/g_train.sh
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> fdd1188 (initial commit)
+
