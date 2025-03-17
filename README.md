@@ -163,7 +163,7 @@ python llava/eval/run_llava.py --model-path="lmc22/text4seg-llava-7b-p24" --imag
 ```
 
 ## Checkpoints
-Download the our checkpoints (Tables 4 and 5) from [OneDrive](https://drive.google.com/drive/folders/1DueMGFkN6p1RvCxym5BpxsOdm2q3tSCl?usp=drive_link) to `checkpoints` folder.
+Download the our checkpoints (Tables 4) from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/lanm0002_e_ntu_edu_sg/EiVW8E3XmBtMtjCup0_qzzUByl42Nc2eZWGAIbW0RwVn6g?e=bhwA3A) to `checkpoints` folder.
 
 ## Model evaluation
 Referring expression segmengtation:
