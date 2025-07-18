@@ -152,6 +152,8 @@ python playground/data/create_json/create_cocostuff.py
 
 
 ## Pre-trained weights
+Note that you don't need to manually download these pre-trained weights if you're only performing quick inference.
+
 Download the [clip-vit-large](https://huggingface.co/openai/clip-vit-large-patch14-336) and [vicuna-7b-v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) weights from the Hugging Face to `pre_trained` folder.
 Download the [mm_project.bin](https://huggingface.co/liuhaotian/llava-v1.5-mlp2x-336px-pretrain-vicuna-7b-v1.5) to `checkpoints/llava-v1.5-7b-pretrain` folder.
 Download the [sam-h](https://github.com/facebookresearch/segment-anything#model-checkpoints) to `llava/model/segment_anything` folder.
@@ -161,6 +163,7 @@ Please note that this checkpoint was trained on a combination of the LLaVA v1.5 
 ```
 python llava/eval/run_llava.py --model-path="lmc22/text4seg-llava-7b-p24" --image-file="images/horses.jpg" --query="Please segment the white horse in this image."
 ```
+It will automatically download the checkpoint from the Huggingface.
 
 ## Checkpoints
 Download the our checkpoints (Tables 4) from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/lanm0002_e_ntu_edu_sg/EiVW8E3XmBtMtjCup0_qzzUByl42Nc2eZWGAIbW0RwVn6g?e=bhwA3A) to `checkpoints` folder.
