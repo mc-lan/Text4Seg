@@ -156,7 +156,7 @@ def eval_model(args):
                 if 1 not in pred_mask:
                     sam_mask = np.zeros((1, h_ori, w_ori))
                 else:
-                    logits = compute_logits_from_mask(mask_upsample)
+                    logits = compute_logits_from_mask(pred_mask.to(torch.float64))
                     point_coords, point_labels = masks_sample_points(mask_upsample)
                     sam_mask, score, logit = predictor.predict(
                         point_coords=point_coords,
