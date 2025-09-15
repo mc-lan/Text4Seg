@@ -51,6 +51,7 @@ Our approach provides an efficient, scalable solution for vision-centric tasks w
 
 ## 📢 Latest Updates
 
+- **09/2025:** We release the extended version [Text4Seg++](https://arxiv.org/abs/2509.06321).
 - **12/2024:** We release the code and datasets.
 
 ---
