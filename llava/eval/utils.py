@@ -113,8 +113,16 @@ def compute_logits_from_mask(mask, eps=1e-3):
         pass
 
     elif logits.shape[0] == logits.shape[1]:  # shape is square
-        trafo = ResizeLongestSide(expected_shape[0])
-        logits = trafo.apply_image(logits[..., None])
+        # trafo = ResizeLongestSide(expected_shape[0])
+        # logits = trafo.apply_image(logits[..., None])
+        logits = torch.from_numpy(logits)
+        logits = F.interpolate(
+            logits.unsqueeze(0).unsqueeze(0),
+            size=expected_shape,
+            mode='bilinear',
+            align_corners=False
+        ).squeeze(0).squeeze(0)
+        logits = logits.numpy()
 
     else:  # shape is not square
         # resize the longest side to expected shape
