@@ -175,7 +175,7 @@ def masks_sample_points(masks):
     y = y.to(masks)
     x = x.to(masks)
 
-    k = np.random.randint(10, 11)
+    k = np.random.randint(20, 21)
     samples_pos = []
     for b_i in range(len(masks)):
         select_mask = (masks[b_i] > 0.5)
@@ -191,7 +191,7 @@ def masks_sample_points(masks):
 
     samples_pos = torch.cat(samples_pos)
 
-    k = np.random.randint(10, 11)
+    k = np.random.randint(20, 21)
     samples_neg = []
     for b_i in range(len(masks)):
         select_mask = (masks[b_i] < 0.5)
